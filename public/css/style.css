@@ -1,0 +1,172 @@
+/* theme */
+:root {
+    --font-family: 'Open Sans', sans-serif;
+    --primary: #8e44ad;
+    --dark: #2c3e50;
+    --background-light: #ecf0f1;
+    --text-color: #444;
+    --text-color-light: #fff;
+    --box-shadow: -webkit-box-shadow: 5px 5px 15px 0px #000000;
+    --box-shadow: 5px 5px 15px 0px #000000;
+    --border: 1px solid #eee;
+}
+
+
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: var(--font-family);
+    background-color: var(--background-light);
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+/* container */
+.super-container {
+    font-size: 1.6rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+/* content */
+.content {
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    color: var(--text-color);
+}
+
+/* todo */
+.todo-container {
+    padding: 1.5rem;
+    background-color: #fff;
+    border: var(--border);
+    border-radius: 3px;
+    min-width: 60rem;
+    min-height: 40rem;
+    box-shadow: var(--box-shadow);
+}
+
+.todo-container h1 {
+    text-align: center;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-form textarea {
+    box-shadow: var(--box-shadow);
+}
+
+.todo-form button {
+    background-color: green;
+    color: var(--text-color-light);
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 1.2rem;
+    transition: 1
+}
+
+.todo-form button:hover {
+    transform: scale(1.2);
+}
+
+/* task */
+.task {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.task button {
+    font-size: 2rem;
+}
+
+/* header */
+header {
+    background-color: var(--primary);
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--text-color-light);
+}
+
+/* footer */
+footer {
+    background: var(--dark);
+    display: flex;
+    flex-flow: row-reverse;
+    color: var(--text-color-light);
+    padding: 1.5rem;
+}
+
+/* container page task */
+.container-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+
+.content_task {
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    color: var(--text-color);
+}
+
+.card {
+    min-height: 60rem;
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card h5 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
