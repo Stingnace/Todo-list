@@ -3,9 +3,10 @@
 if (isset($_POST['validate'])) {
     if (!empty($_POST['title'])) {
         $title = $_POST['title'];
-        $insert_todo = $bdd->prepare("INSERT INTO todo(title) VALUES (?)");
+        $description = nl2br($_POST['description']);
+        $insert_todo = $bdd->prepare("INSERT INTO todo(title, description) VALUES (?, ?)");
         $insert_todo->execute([
-            $title,
+            $title, $description
         ]);
     } else {
         header("location: ../index?error=champs");

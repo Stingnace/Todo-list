@@ -12,6 +12,10 @@
                     <div titre><label for="title">Titre : </label> <br>
                         <input type="text" name="title">
                     </div> <br>
+                    <div class="description">
+                        <label for="descritpion"> Description : </label> <br>
+                        <textarea name="description" id="" cols="30" rows="5"></textarea>
+                    </div>
 
                     <div class="validate">
                         <button type="submit" name="validate">Valider</button>
@@ -19,7 +23,7 @@
                     </div>
                 </form>
             </div>
-            <div class="task"><a href="task.php"><button type="button" class="btn btn-primary">voir toutes les tâches</button></a></div>
+            <div class="task"><a href="task.php" target="_blank"><button type="button" class="btn btn-primary">voir toutes les tâches</button></a></div>
         </div>
 
     </div>
